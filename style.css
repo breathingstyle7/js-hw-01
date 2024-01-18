@@ -7,11 +7,14 @@ body {
     height: 100%;
     font-family: sans-serif;
 }
+
 body {
     background: linear-gradient(to bottom right, #ff24ed, #ff52e2, #e180ff, #6ce2ff, #31d6ff, #00ccff, #008bad, #0046df, #003dc0);
     background-size: 200% 200%;
+    background-position: left top; /* Змінено тут */
     animation: gradientAnimation 20s ease infinite alternate;
 }
+
 @keyframes gradientAnimation {
     0% {
         background-position: right bottom;
@@ -19,4 +22,10 @@ body {
     100% {
         background-position: left top;
     }
+}
+
+.image {
+    width: 500px;
+    object-fit: contain;
+    margin: 200px auto;
 }
